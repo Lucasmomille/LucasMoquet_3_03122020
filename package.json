@@ -1,0 +1,16 @@
+{
+  "name": "omyfood",
+  "version": "1.0.0",
+  "description": "p3_OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SCSS/main.scss:./CSS/style.css --style compressed",
+    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed"
+  },
+  "author": "Lucas Moquet",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
