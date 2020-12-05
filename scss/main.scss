@@ -1,0 +1,17 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+/*function -mixin*/
+
+@import "./base/base";
+@import "./base/typography";
+@import "./component/buttons";
+/*component */
+
+@import "./layout/header";
+@import "./layout/containers";
+@import "./layout/footer";
+/*form*/
+
+
+/*@import "./Pages/contact";*/
+
