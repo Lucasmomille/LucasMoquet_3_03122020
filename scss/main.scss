@@ -1,15 +1,15 @@
 @import "./utils/variables";
-@import "./utils/mixins";
+//@import "./utils/mixins";
 /*function -mixin*/
 
 @import "./base/base";
 @import "./base/typography";
-@import "./component/buttons";
+@import "./components/buttons";
 /*component */
 
 @import "./layout/header";
 @import "./layout/containers";
-@import "./layout/footer";
+// @import "./layout/footer";
 /*form*/
 
 

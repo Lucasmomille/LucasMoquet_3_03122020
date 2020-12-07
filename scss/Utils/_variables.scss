@@ -2,7 +2,7 @@ $color-text: #000000;
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-third: #99E2D0;
-$color-bg: $color-text, 0.5 ;
+$color-bg: #f0e8e8 ;
 $color-white: #FFFFFF;
 
 $size-text: 1rem;
@@ -11,8 +11,6 @@ $size-h3: $size-text*1.1;
 
 $size-img: 110px;
 
-
-$margin-mobile: 1rem;
 
 $breakpoints: (
     desktop: 1700px,
