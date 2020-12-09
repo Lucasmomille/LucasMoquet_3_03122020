@@ -1,0 +1,5 @@
+//bg color
+
+@mixin background-color ($color:$color-bg){
+    background-color: $color;
+}

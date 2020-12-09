@@ -1,0 +1,10 @@
+.footer {
+    padding: 1.5rem;
+    color: $color-white;
+    background-color: $color-text;
+    &__title{
+        font-family: 'Shrikhand';
+        color: $color-white;
+        margin-bottom: 1rem;
+    }
+}

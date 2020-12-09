@@ -1,4 +1,8 @@
 .btn {
     background: linear-gradient($color-secondary, $color-primary);
     padding: 1rem;
+    border: none;
+    border-radius: 50vw;
+    color: $color-white;
+    font-weight: 700;
 }
