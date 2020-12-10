@@ -104,6 +104,9 @@
         top: 230px;
         right: 15px;
         font-size: 1.5rem;
+        &--fill {
+            display: none;
+        }
         &:active {
             background-color: $color-primary;
         }

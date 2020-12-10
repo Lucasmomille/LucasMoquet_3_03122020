@@ -1,11 +1,24 @@
 .header {
     width: 100%;
     text-align: center;
-    padding: 0.5rem;
+    position: relative;
     &__title{
         display: none;
     }
     &__logo {
         width: 55%;
+        margin-top: 0.5rem;
+    }
+    &__icon {
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
+    &__img{
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 50px;
+        left: 0;
     }
 }
