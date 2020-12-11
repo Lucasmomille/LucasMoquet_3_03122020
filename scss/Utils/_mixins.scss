@@ -1,5 +1,6 @@
 //bg color
 
-@mixin background-color ($color:$color-bg){
+@mixin background-color ($color:$color-bg, $opacity: $opacity-setting){
     background-color: $color;
+    opacity: $opacity;
 }
