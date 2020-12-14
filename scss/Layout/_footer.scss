@@ -2,9 +2,19 @@
     padding: 1.5rem;
     color: $color-white;
     background-color: $color-text;
-    &__title{
+    &__title {
         font-family: 'Shrikhand';
         color: $color-white;
         margin-bottom: 1rem;
+    }
+    &__icon {
+        margin-right: 0.5rem;
+        width: 15px;
+        &--size{
+            font-size: 12px;
+        }
+    }
+    &__mail {
+        color: $color-white;
     }
 }

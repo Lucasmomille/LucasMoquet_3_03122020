@@ -15,11 +15,13 @@
 <body>
     <header class="header">
         <img src="./images/logo/ohmyfood.png" alt="logo omyfood" class="header__logo"/>
-        <h1 class="header__title">ohmyfood</h1>    
-        <!--mettre loading spinner-->  
+        <h1 class="header__title">ohmyfood</h1> 
     </header>
-
+    <div class="loading">
+        <div class="loading__bar"></div><div class="loading__bar"></div><div class="loading__bar"></div><div class="loading__bar"></div>
+    </div>   
     <main class="main">
+         
         <div class="map">
             <p class="map__result"> <i class="fas fa-map-marker-alt map__icon"></i> Paris, Belleville</p>
 
@@ -43,7 +45,7 @@
             </div>
             <div class="use__elt use__elt--purple">
                 <p class="use__chip">3</p>
-                <i class="fas fa-store use__icon"></i>
+                <i class="fas fa-store use__icon use__icon--purple"></i>
                 <p class="use__txt">Dégustez au restaurant</p>
             </div>
         </div>
@@ -115,10 +117,10 @@
             ohmyfood
         </p>
         <ul class="footer__nav">
-            <li><img/>Proposer un restaurant</li>
-            <li><img/>Devenir partenaire</li>
+            <li><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</li>
+            <li><i class="fas fa-hands-helping footer__icon footer__icon--size"></i>Devenir partenaire</li>
             <li>Mentions légales</li>
-            <li><mail></mail>Contact</li>
+            <li><a href="mailto:contact@omyfood.fr" class="footer__mail">Contact</a></li>
         </ul>
 
     </footer>

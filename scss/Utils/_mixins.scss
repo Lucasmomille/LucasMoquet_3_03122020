@@ -4,3 +4,18 @@
     background-color: $color;
     opacity: $opacity;
 }
+
+@mixin color($color: lightness-shift($color-primary)){
+    background-color: $color;
+}
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin tablet-only {
+    @media (min-width: map-get($breakpoints, middle-device)) and (max-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}

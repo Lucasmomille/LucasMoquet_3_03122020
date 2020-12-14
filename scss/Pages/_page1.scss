@@ -23,17 +23,35 @@
         background-color: $color-third;
         margin-bottom: 1rem;
     }
-    &__description {
+    &__container {
         border-radius: 15px;
         box-shadow: 1.5px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
         background-color: $color-white;
         margin-bottom: 1rem;
-        padding: 0.5rem;
+        display: inline-flex;
+        justify-content: space-between;
         position: relative;
+        animation: dishes 2000ms 400ms both;
+        opacity: 0;
+        width: 100%;
+        overflow: hidden;
+        @for $i from 1 through 9 {
+           &--#{$i} {
+                animation-delay: 400ms * $i;
+            }
+        }
+    }
+    &__description {
+        padding: 0.5rem;
+        width: 100%;
+        
     }
     &__name {
         font-weight: 700;
         margin-bottom: 0.5rem;
+        height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__legend {
         width: 100%;
@@ -42,14 +60,29 @@
     }
     &__ingredients {
         overflow: hidden;
+        text-overflow: ellipsis;
+        height: 20px;
+        
     }
     &__price {
         font-weight: 700;
-        
+        margin-right: 5px;
     }
     &__checked {
-        display: none;
+        //visibility: collapse;
         color: $color-third;
+        background-color: $color-third;
+        width: 20%;
+        position: relative;
+        border-top-right-radius: 15%;
+        border-bottom-right-radius: 15%;
+    }
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translateX(50%) translateY(-50%);
+        color: $color-white
     }
 }
 
@@ -57,4 +90,14 @@
     width: 100%;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+// .menu__container:hover > .menu__checked {
+    
+//     animation: check 2000ms 0s both cubic-bezier(0,.8,.19,.94);
+    
+// }
+
+.menu__container:hover > .menu__icon {
+    animation: rotate 3000ms 3000ms both;
 }
