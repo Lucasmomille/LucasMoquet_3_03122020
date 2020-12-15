@@ -37,7 +37,7 @@
         overflow: hidden;
         @for $i from 1 through 9 {
            &--#{$i} {
-                animation-delay: 400ms * $i;
+                animation-delay: 400ms*$i;
             }
         }
     }
@@ -62,14 +62,14 @@
         overflow: hidden;
         text-overflow: ellipsis;
         height: 20px;
-        
+        white-space: nowrap;
     }
     &__price {
         font-weight: 700;
         margin-right: 5px;
     }
     &__checked {
-        //visibility: collapse;
+        visibility: collapse;
         color: $color-third;
         background-color: $color-third;
         width: 20%;
@@ -78,11 +78,10 @@
         border-bottom-right-radius: 15%;
     }
     &__icon {
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translateX(50%) translateY(-50%);
-        color: $color-white
+        
+        color: $color-white;
+        margin-left: 20px;
+        margin-top: 25px;
     }
 }
 
@@ -92,12 +91,12 @@
     margin-bottom: 2rem;
 }
 
-// .menu__container:hover > .menu__checked {
+.menu__container:hover > .menu__checked {
     
-//     animation: check 2000ms 0s both cubic-bezier(0,.8,.19,.94);
+    animation: check 2000ms 0s both cubic-bezier(0,.8,.19,.94);
     
-// }
-
-.menu__container:hover > .menu__icon {
-    animation: rotate 3000ms 3000ms both;
 }
+
+.menu__container:hover > .menu__checked > .menu__icon {
+    animation: rotate 3000ms 0s both;
+} 

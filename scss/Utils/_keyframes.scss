@@ -21,9 +21,9 @@
     100% {
       transform: rotate(360deg);
     }
-  }
+}
 
-  @keyframes dishes{
+@keyframes dishes{
     0% {
         top: -20%;
         
@@ -36,10 +36,9 @@
         top: 0;
         //opacity: 1;
         }
-    }
+}
 
-
-    @keyframes check{
+@keyframes check{
         0% {
             right: -99px;
            // visibility: visible;  
@@ -51,13 +50,13 @@
             visibility: visible;
             
             }
-        }
+}
 
-    @keyframes rotate {
+@keyframes rotate {
         0% {
             transform: rotate(0deg);
           }
-          100% {
+        100% {
             transform: rotate(360deg);
           }
-    }
+}
