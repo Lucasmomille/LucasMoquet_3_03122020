@@ -34,10 +34,6 @@
     }
     &__title {
         margin-bottom: 0.5rem;
-        /* @include desktop-only {
-            margin-left: auto;
-            margin-right: auto;
-        } */
     }
     &__line {
         width: 100px;
@@ -90,12 +86,10 @@
     }
     &__price {
         font-weight: 700;
-        
         margin-left: 10px;
     }
     &__checked {
         visibility: collapse;
-        color: $color-third;
         background-color: $color-third;
         width: 20%;
         position: relative;
