@@ -3,7 +3,7 @@
 }
 
 .map {
-    background-color: darken($color-bg, 10%);
+    background-color: darken($color-bg, 5%);
     text-align: center;
     padding: 1rem;
     box-shadow: inset 0px 5px 2px 0px rgba(0, 0, 0, .2);
@@ -37,6 +37,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+    @include tablet-only {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
    
     &__elt {
         margin-bottom: 0.5rem;
@@ -57,6 +62,7 @@
         @include desktop-only{
             width: 30%;
         }
+        
     }
     &__chip {
         display: inline-block;
@@ -80,6 +86,10 @@
             background-color: lighten($color-primary, 30%);
             color: $color-primary;
         }
+        @include desktop-only {
+            margin-left: 90px;
+        }
+       
     }
     &__txt {
         font-weight: 700;
@@ -111,6 +121,16 @@
         flex-wrap: wrap;
 
     }
+
+    @include tablet-only {
+        display: flex;
+        justify-content: space-between;
+        width : 80%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+
+    }
     &__article {
         border-radius: 15px;
         box-shadow: 1.5px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
@@ -118,7 +138,10 @@
         margin-bottom: 1rem;
         position: relative;
         @include desktop-only {
-            width: 45%;
+            width: 49%;
+        }
+        @include tablet-only {
+            width: 49%;
         }
     }
     &__figure {
@@ -147,12 +170,14 @@
     }
     
     &__like {
-        display: inline-block;
         position: absolute;
         z-index: 1;
         top: 230px;
         right: 15px;
         font-size: 1.5rem;
+        &--empty {
+            visibility: visible;
+        }
         &--full {
             color: transparent;
             background-clip: text;
@@ -164,12 +189,10 @@
     }
 }
 
-.restaurants__txt:hover >.restaurants__like--empty, .restaurants__txt:active >.restaurants__like--empty {
-    display: none;
+.restaurants__txt:hover >.restaurants__like--empty , .restaurants__txt:active >.restaurants__like--empty {
+    visibility: collapse;
 }
-.restaurants__txt:hover >.restaurants__like--full, .restaurants__txt:active >.restaurants__like--full{
+.restaurants__txt:hover >.restaurants__like--full, .restaurants__txt:active >.restaurants__like--full {
     visibility: visible;
     opacity: 1;
-    
-    
 }
