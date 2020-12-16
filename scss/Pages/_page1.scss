@@ -43,6 +43,8 @@
     }
     &__title {
         margin-bottom: 0.5rem;
+        font-weight: 400;
+        font-size: 1.2rem;
     }
     &__line {
         width: 100px;
@@ -62,7 +64,7 @@
         opacity: 0;
         width: 100%;
         overflow: hidden;
-        @for $i from 1 through 9 {
+        @for $i from 1 through 10 {
            &--#{$i} {
                 animation-delay: 400ms*$i;
             }
@@ -71,7 +73,9 @@
     &__description {
         padding: 0.5rem;
         width: 100%;
-        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__name {
         font-weight: 700;
@@ -79,6 +83,7 @@
         height: 20px;
         overflow: hidden;
         text-overflow: ellipsis;
+        
     }
     &__legend {
         width: 100%;
@@ -89,9 +94,7 @@
     &__ingredients {
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 25px;
-        white-space: nowrap;
-        
+        height: 25px;        
     }
     &__price {
         font-weight: 700;
