@@ -7,15 +7,37 @@
     width: 100%;
     position: relative;
     margin-top: 240px;
+    @include desktop-only {
+        width: 70%;
+        margin-top: 440px;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     &__restaurant {
         margin-top: 2rem;
+        @include desktop-only {
+            margin-bottom: 2rem;
+            width: 100%;
+            text-align: center;
+            
+        }
     }
     &__dishes {
         margin: 0.5rem;
         animation: delay-appearance 1000ms;
+        @include desktop-only {
+            width: 31%;
+        }
     }
     &__title {
         margin-bottom: 0.5rem;
+        /* @include desktop-only {
+            margin-left: auto;
+            margin-right: auto;
+        } */
     }
     &__line {
         width: 100px;
@@ -55,18 +77,21 @@
     }
     &__legend {
         width: 100%;
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
+        
     }
     &__ingredients {
         overflow: hidden;
         text-overflow: ellipsis;
-        height: 20px;
+        height: 25px;
         white-space: nowrap;
+        
     }
     &__price {
         font-weight: 700;
-        margin-right: 5px;
+        
+        margin-left: 10px;
     }
     &__checked {
         visibility: collapse;
