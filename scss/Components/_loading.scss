@@ -8,11 +8,9 @@
   text-align: center;
   opacity: 0;
   animation: loading 3s 200ms backwards;
-  /* //@include desktop-only{
-    display: none;
-  } */
+  
   &__bar{
-    left: 45%;
+    left: 33%;
     top: 10%;
     box-sizing: border-box;
     display: block;
@@ -21,10 +19,14 @@
     height: 150px;
     border: 15px solid rgba(0, 0, 0, 0.952);
     border-radius: 50%;
-    
     animation: loading-spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-color: $color-primary transparent transparent transparent;
-    
+    @include desktop-only{
+      left: 45%;
+    }
+    @include tablet-only {
+      left: 41%;
+    }
   }
 }
 

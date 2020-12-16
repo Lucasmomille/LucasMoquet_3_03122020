@@ -27,7 +27,11 @@
             width: 50%;
             top: 100px;
             transform: translateX(50%);
-            
+        }
+        @include tablet-only {
+            top: 90px;
+            width: 70%;
+            transform: translateX(21.5%);
         }
     }
 }

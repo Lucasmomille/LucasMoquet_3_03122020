@@ -16,13 +16,22 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    @include tablet-only {
+        width: 70%;
+        margin-top: 320px;
+        margin-right: auto;
+        margin-left: auto;
+    }
     &__restaurant {
         margin-top: 2rem;
         @include desktop-only {
             margin-bottom: 2rem;
             width: 100%;
             text-align: center;
-            
+        }
+        @include tablet-only {
+            width: 100%;
+            text-align: center;
         }
     }
     &__dishes {
@@ -95,12 +104,18 @@
         position: relative;
         border-top-right-radius: 15%;
         border-bottom-right-radius: 15%;
+        @include tablet-only {
+            width: 15%;
+        }
     }
     &__icon {
-        
         color: $color-white;
         margin-left: 20px;
         margin-top: 25px;
+        @include tablet-only {
+            margin-left: 25px;
+           
+        }
     }
 }
 
