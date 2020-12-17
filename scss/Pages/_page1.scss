@@ -60,10 +60,10 @@
         display: inline-flex;
         justify-content: space-between;
         position: relative;
-        animation: dishes 2000ms 400ms both;
         opacity: 0;
         width: 100%;
         overflow: hidden;
+        animation: dishes 2000ms 400ms both;
         @for $i from 1 through 10 {
            &--#{$i} {
                 animation-delay: 400ms*$i;
@@ -101,15 +101,11 @@
         margin-left: 10px;
     }
     &__checked {
-        visibility: collapse;
         background-color: $color-third;
-        width: 20%;
+        width: 0%;
         position: relative;
         border-top-right-radius: 15%;
         border-bottom-right-radius: 15%;
-        @include tablet-only {
-            width: 15%;
-        }
     }
     &__icon {
         color: $color-white;
@@ -131,6 +127,9 @@
 .menu__container:hover > .menu__checked,  .menu__container:active > .menu__checked{
     
     animation: check 2000ms 0s both cubic-bezier(0,.8,.19,.94);
+    @include tablet-only {
+        animation: check-tablet 2000ms 0s both cubic-bezier(0,.8,.19,.94);
+    }
     
 }
 

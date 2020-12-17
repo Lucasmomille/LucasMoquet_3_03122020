@@ -17,18 +17,15 @@
     0% {
         opacity: 0;
     }
-    
     80%, 100% {
         opacity: 1;
-        visibility: visible;
+        z-index: 1;
     }
 }
 @keyframes loading-spinner {
     0% {
       transform: rotate(0deg);
-      
     }
-    
     100% {
       transform: rotate(360deg);
     }
@@ -37,15 +34,12 @@
 @keyframes dishes{
     0% {
         top: -20%;
-        
     }
-    
     85%,100% {
         opacity: 1;
     }
     100% {
         top: 0;
-        
         }
 }
 
@@ -54,13 +48,20 @@
             right: -99px;
            
         }
-
-        
         100% {
             right: -1px;
-            visibility: visible;
+            width: 20%;
             
             }
+}
+@keyframes check-tablet {
+    0% {
+        right: -99px;
+    }
+    100% {
+        right: -1px;
+        width: 15%;
+        }
 }
 
 @keyframes rotate {
