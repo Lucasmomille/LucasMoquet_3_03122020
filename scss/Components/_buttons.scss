@@ -6,8 +6,25 @@
     box-shadow: 1.5px 2px 10px 0.1px rgba(0, 0, 0, 0.1);
     color: $color-white;
     font-weight: 700;
-    &:hover{
-        box-shadow: 1.5px 2px 10px 0.1px rgba(0, 0, 0, 0.8);
-        opacity: 0.8;
+    position: relative;
+    z-index: 1;
+    &:hover {
+        &::after {
+            opacity: 1;
+            box-shadow: 1.5px 2px 10px 0.1px rgba(0, 0, 0, 0.8);
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;  
+        left: 0;
+        border-radius: 50vw;
+        background: linear-gradient(lighten($color-secondary,5), lighten($color-primary,5)) ;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
     }
 }
