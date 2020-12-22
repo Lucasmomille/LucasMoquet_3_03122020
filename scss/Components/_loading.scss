@@ -1,5 +1,5 @@
 .loading {
-  //visibility: collapse;
+  
   position: absolute;
   background-color: rgba(0,0,0,.3);
   width: 100%;
@@ -8,7 +8,7 @@
   text-align: center;
   opacity: 0;
   animation: loading 3s 200ms backwards;
-  display: none;
+  pointer-events: none;
   
   &__bar{
     left: 33%;
